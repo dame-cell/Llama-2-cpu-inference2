@@ -2,9 +2,6 @@
 
 Run inference on the latest llama2 model using your CPU. This inference code uses a [ggml](https://github.com/ggerganov/ggml) quantized model. To run the model we'll use a library called [ctransformers](https://github.com/marella/ctransformers) that has bindings to ggml in python.
 
-Turn style with history on latest commit:
-
-![Inference Chat](https://user-images.githubusercontent.com/7272343/248859199-28a82f3d-ee54-44e4-b22d-ca348ac667e3.png)
 
 
 ## Requirements
