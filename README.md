@@ -36,7 +36,7 @@ Next install dependencies.
 pip install -r requirements.txt
 ```
 
-Next download the quantized model weights (about 19GB).
+Next download the quantized model weights (about 2.7 GB).
 
 ```sh
 python download_model.py
@@ -52,6 +52,7 @@ To try out the RAG code you can run this code in the terminal.
 
 ```sh
 python rag.py
+
 ```
 
 The idea for this code was inspired by - [https://github.com/abacaj/mpt-30B-inference](https://github.com/abacaj/mpt-30B-inference)
