@@ -6,7 +6,7 @@ Run inference on the latest llama2 model using your CPU. This inference code use
 
 ## Requirements
 
-I recommend you use docker for this model, it will make everything easier for you. Minimum specs system with 32GB of ram. Recommend to use `python 3.10`.
+I recommend you use docker for this model, it will make everything easier for you. Minimum specs system with 5.37 GB of ram. Recommend to use `python 3.10`.
 
 
 ## Setup
@@ -41,4 +41,4 @@ To try out the RAG code you can run this code in the terminal.
 python rag.py
 ```
 
-Next modify inference script prompt and generation parameters.
+The idea for this code was inspired by - [https://github.com/abacaj/mpt-30B-inference](https://github.com/abacaj/mpt-30B-inference)
