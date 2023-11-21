@@ -1,4 +1,4 @@
-# MPT 30B inference code using CPU
+# Llama 2  inference code using CPU
 
 Run inference on the latest llama2 model using your CPU. This inference code uses a [ggml](https://github.com/ggerganov/ggml) quantized model. To run the model we'll use a library called [ctransformers](https://github.com/marella/ctransformers) that has bindings to ggml in python.
 
