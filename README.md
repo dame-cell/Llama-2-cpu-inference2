@@ -14,8 +14,21 @@ I recommend you use docker for this model, it will make everything easier for yo
 First create a venv.
 
 ```sh
-python -m venv env && source env/bin/activate
+python -m venv env  
 ```
+
+Then activate the enviroment in Windows.
+
+```sh
+env\Scripts\activate 
+```
+
+Then activate the enviroment in Mac.
+
+```sh
+source env/bin/activate
+```
+
 
 Next install dependencies.
 
