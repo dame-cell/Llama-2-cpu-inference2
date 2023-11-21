@@ -41,13 +41,18 @@ hf = HuggingFaceEmbeddings(
     encode_kwargs=encode_kwargs
 )
 
+# you will need pinecone api key and enviroment which you can get from https://www.pinecone.io/
 pinecone.init(
-    api_key="12d01438-407e-48d5-bef5-7493ea86daca", environment="gcp-starter"
+    api_key="", environment=""
 )
 
-docsearch = Pinecone.from_existing_index("langchain-self-retriever-demo", hf)
+index_name = "langchain-demo"
 
+if index_name not in pinecone.list_indexes():
+    # we create a new index
+    pinecone.create_index(name=index_name, metric="cosine", dimension=1536)
 
+docsearch = Pinecone.from_documents(docs, embeddings, index_name=index_name)
 
 
 retriever = docsearch.as_retriever(search_kwargs={"k": 3})
